@@ -6,7 +6,7 @@ import requests
 from api.taokela import taokela
 
 
-print('来自qq:1430097658,本程序免费,造成后果与本人无关,查询接口来自淘课啦,校请园网访问')
+print('来自qq:1430097658,本程序免费,造成后果与本人无关,查询接口来自淘课啦,请校园网访问')
 
 # 启动或接管浏览器，并创建标签页对象
 tab = Chromium().latest_tab
@@ -62,8 +62,7 @@ def main():
         while True:
             response = requests.post(url, headers=headers, cookies=cookies, params=params, data=data).json()
             extra_left(response,keyword=keyword)
-
-            time.sleep(3)
+            time.sleep(10)
 
     elif choose == '2':
         response = requests.post(url, headers=headers, cookies=cookies, params=params, data=data).json()
