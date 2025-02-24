@@ -16,7 +16,7 @@ headers = {
 cookies = {
     "courseEvaluationFilled": "true"
 }
-def get(teacher='',course="操作系统"):
+def get(teacher='',course=""):
     url = "http://103.20.220.93:5000/search"
     params = {
         "course_name": course,
@@ -27,4 +27,4 @@ def get(teacher='',course="操作系统"):
     return res
 
 if __name__ =='__main__':
-    print(get(teacher='杨敏',course=''))
+    print(get(teacher='卢本伟',course=''))
